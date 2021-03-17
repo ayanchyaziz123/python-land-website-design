@@ -1,0 +1,22 @@
+.bg-dark{
+    background: #2b5b84 !important;
+}
+.logo{
+    font-size: 100px;
+    color: aliceblue;
+}
+.input-edit{
+    font-size: 13px !important;
+}
+li .nav-link{
+    font-size: 14px !important;
+}
+
+.dropdown-menu .dropdown-item{
+    font-size: 14px !important;
+
+}
+.btn{
+    font-size: 14px !important;
+
+}
