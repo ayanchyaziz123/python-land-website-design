@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#w3s").attr("href", "https://www.w3schools.com/jquery/");
+  });
+});
+</script>
+
+</head>
+<body>
+
+<p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+
+<button>Change href Value</button>
+
+<p>Mouse over the link (or click on it) to see that the value of the href attribute has changed.</p>
+
+
+<div>
+  <button onclick="up()">up</button>
+  <button onclick="down()">down</button>
+  <p id="result"></p>
+<div>
+
+<div>
+  <button onclick="change()">Change</button>
+  <p id="result"></p>
+<div>
+
+<input type="checkbox" checked data-toggle="toggle" 
+data-on="Bangla" data-off="English" id="mc" onclick="mF()" data-onstyle="success" data-offstyle="danger">
+
+<p id="tex"></p>
+<p id="ban"></p>
+
+
+
+<script>
+
+function mF(){
+    var c = document.getElementById("mc");
+    if (c.checked == true){
+     document.getElementById("tex").innerHTML = "English";
+  } else {
+      document.getElementById("ban").innerHTML = "Bangla";
+  }
+
+
+}
+
+
+</script>
+
+<p>Display some text when the checkbox is checked:</p>
+
+<label for="myCheck">Checkbox:</label> 
+<input type="checkbox" id="myCheck" onclick="myFunction()">
+
+<p id="text" style="display:none">Checkbox is CHECKED!</p>
+
+<script>
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+<script>
+
+
+var s;
+
+function change(){
+
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+<script>
+
+
+var score = 17
+function up(){
+  if(score < 30 ){
+    score ++;
+  }
+  document.getElementById("result").innerHTML = score;
+}
+
+function down(){
+  if(score > 17 ){
+    score --;
+  }
+  document.getElementById("result").innerHTML = score;
+}
+
+
+
+
+</script>
+
+</body>
+</html>
